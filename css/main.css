@@ -51,6 +51,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        border: none;
         width: 40px;
         height: 40px;
         border-radius: 100%;
@@ -58,8 +59,11 @@ body {
         background-color: #22303d;
         transition: 0.5s ease; }
         body .container .seccion3 .puntaje:hover {
+          background-color: lightgray;
+          color: white; }
+        body .container .seccion3 .puntaje:focus {
           background-color: #fc7613;
-          color: black; }
+          color: white; }
     body .container .seccion4 {
       height: 40px;
       border-radius: 15px;
@@ -72,3 +76,55 @@ body {
       font-weight: 700;
       font-family: "Overpass", sans-serif;
       cursor: pointer; }
+      body .container .seccion4:hover {
+        background-color: gray;
+        color: white; }
+  body .thankyou {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 340px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background-color: #1a212b;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center; }
+    body .thankyou .Tseccion1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px; }
+    body .thankyou .Tseccion2 {
+      display: flex;
+      padding-top: 6px;
+      height: 100px;
+      width: 190px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #262f38; }
+      body .thankyou .Tseccion2 p {
+        font-family: "Overpass", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: #fc7613; }
+    body .thankyou .Tseccion3 {
+      padding: 30px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      body .thankyou .Tseccion3 h1 {
+        color: white;
+        font-family: "Overpass", sans-serif;
+        font-size: 25px; }
+      body .thankyou .Tseccion3 p {
+        font-family: "Overpass", sans-serif;
+        text-align: center;
+        font-size: 12px;
+        color: gray; }

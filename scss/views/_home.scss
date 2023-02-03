@@ -57,6 +57,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                border: none;
                 width: 40px;
                 height: 40px;
                 border-radius: 100%;
@@ -64,8 +65,12 @@ body {
                 background-color: rgb(34, 48, 61);
                 transition: 0.5s ease;
                 &:hover {
+                    background-color: lightgray;
+                    color: white;
+                }
+                &:focus {
                     background-color: rgb(252, 118, 19);
-                color: black;
+                    color: white;
                 }
             }
         }
@@ -82,6 +87,71 @@ body {
             font-weight: 700;
             font-family: $tipo_principal;
             cursor: pointer;
+            &:hover {
+                background-color: gray;
+                color: white;
+            }
+        }
+    }
+    .thankyou {
+        // border: 1px solid red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 340px;
+        border-radius: 10px;
+        padding: 30px 20px;
+        background-color: rgb(26, 33, 43);
+        display: flex;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        .Tseccion1 {
+            // border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+        }
+        .Tseccion2 {
+            display: flex;
+            // border: 1px solid green;
+            padding-top: 6px;
+            height: 100px;
+            width: 190px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(38, 47, 56);
+            p {
+                // border: 1px solid red;
+                font-family: $tipo_principal;
+                font-size: 15px;
+                font-weight: 400;
+                color: rgb(252, 118, 19);
+            }
+        }
+        .Tseccion3 {
+            // border: 1px solid red;
+            padding: 30px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                color: white;
+                font-family: $tipo_principal;
+                font-size: 25px;
+            }
+            p {
+                font-family: $tipo_principal;
+                text-align: center;
+                font-size: 12px;
+                color: gray;
+            }
         }
     }
 }
